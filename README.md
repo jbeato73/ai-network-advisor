@@ -11,8 +11,6 @@ and future-proofed API calls.
 
 * **Context-Aware Recommendations:** Adjusts diagnostic steps based on hardware vendor (Cisco, Juniper, etc.) and specific error codes (e.g., Timeout vs. Authentication Failure).
 
-
-
 ## 🛠️ Setup & Execution
 
 1. **Install Dependencies:**
@@ -21,25 +19,23 @@ and future-proofed API calls.
 
 2. ## Configure Environment:
 
-Add your Gemini API Key to a .env file:
+   Add your Gemini API Key to a .env file:
 
-Plaintext
-
-```bash 
-GEMINI_API_KEY=your_actual_key_here
+   Plaintext
+   ```bash 
+   GEMINI_API_KEY=your_actual_key_here
 
 3. ## Run the Advisor:
-
-```Bash
-uv run python ai_advisor.py
+   ```Bash
+   uv run python ai_advisor.py
 
 ## 📋 Technical Stack: 
 
-LLM: Google Gemini 1.5 Flash
+. LLM: Google Gemini 1.5 Flash
 
-SDK: google-genai (v2.0)
+. SDK: google-genai (v2.0)
 
-Environment: UV & Python-Decouple
+. Environment: UV & Python-Decouple
 
 ---
 

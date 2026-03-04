@@ -29,12 +29,14 @@ and future-proofed API calls.
 ## 📋 Technical Stack: 
 
    LLM: Google Gemini 1.5 Flash
+   
    SDK: google-genai (v2.0)
+   
    Environment: UV & Python-Decouple
 
 ---
 
-### 🏁 Final Execution Check:
+## 🏁 Final Execution Check:
    Run the command one last time to see the AI report:
-   ```bash
-      uv run python ai_advisor.py
+    ```bash
+       uv run python ai_advisor.py

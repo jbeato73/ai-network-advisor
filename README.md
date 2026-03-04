@@ -2,6 +2,8 @@
 
 A diagnostic intelligence tool that bridges the gap between raw network telemetry and actionable recovery steps. This utility utilizes the **Google GenAI SDK** and the **Gemini 1.5 Flash** model to automate the first tier of infrastructure troubleshooting.
 
+AIOps Reporting: Includes a specialized query engine that filters the inventory database for assets with active AI-generated recovery playbooks, enabling a "Diagnostics-First" maintenance workflow.
+
 ## 🤖 AIOps Capabilities
 
 * **Automated Incident Analysis:** Evaluates device failure states and generates a 3-step recovery playbook.
@@ -40,4 +42,4 @@ and future-proofed API calls.
    Run the command one last time to see the AI report:
    
     ```bash
-       uv run python ai_advisor.py
+       uv run python ai_advisor.py ()

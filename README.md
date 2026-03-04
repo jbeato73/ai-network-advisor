@@ -28,11 +28,9 @@ and future-proofed API calls.
 
 ## 📋 Technical Stack: 
 
-   . LLM: Google Gemini 1.5 Flash
-
-   . SDK: google-genai (v2.0)
-
-   . Environment: UV & Python-Decouple
+   LLM: Google Gemini 1.5 Flash
+   SDK: google-genai (v2.0)
+   Environment: UV & Python-Decouple
 
 ---
 

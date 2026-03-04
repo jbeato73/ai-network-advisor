@@ -15,32 +15,28 @@ and future-proofed API calls.
 
 1. **Install Dependencies:**
    ```bash
-   uv sync
+      uv sync
 
 2. ## Configure Environment:
-
    Add your Gemini API Key to a .env file:
-
-   Plaintext
    ```bash 
-   GEMINI_API_KEY=your_actual_key_here
+      GEMINI_API_KEY=your_actual_key_here
 
 3. ## Run the Advisor:
    ```Bash
-   uv run python ai_advisor.py
+      uv run python ai_advisor.py
 
 ## 📋 Technical Stack: 
 
-. LLM: Google Gemini 1.5 Flash
+   . LLM: Google Gemini 1.5 Flash
 
-. SDK: google-genai (v2.0)
+   . SDK: google-genai (v2.0)
 
-. Environment: UV & Python-Decouple
+   . Environment: UV & Python-Decouple
 
 ---
 
 ### 🏁 Final Execution Check
-Run the command one last time to see the AI report:
-
-```bash
-uv run python ai_advisor.py
+   Run the command one last time to see the AI report:
+   ```bash
+      uv run python ai_advisor.py

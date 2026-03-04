@@ -13,7 +13,7 @@ and future-proofed API calls.
 
 ## 🛠️ Setup & Execution
 
-1. **Install Dependencies:**
+1. **Install Dependencies:
    ```bash
       uv sync
 
@@ -34,7 +34,7 @@ and future-proofed API calls.
 
 ---
 
-### 🏁 Final Execution Check
+### 🏁 Final Execution Check:
    Run the command one last time to see the AI report:
    ```bash
       uv run python ai_advisor.py

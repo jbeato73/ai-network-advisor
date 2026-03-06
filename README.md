@@ -42,5 +42,5 @@ and future-proofed API calls.
 
    Run the command one last time to see the AI report: 
    
-    ```bash
+   ```bash
        uv run python ai_advisor.py

@@ -15,7 +15,7 @@ and future-proofed API calls.
 
 ## 🛠️ Setup & Execution
 
-1. **Install Dependencies:
+1. ## Install Dependencies:
    ```bash
       uv sync
 

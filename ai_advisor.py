@@ -80,7 +80,7 @@ def get_ai_advice(hostname, model, status):
         f"Provide exactly 3 concise troubleshooting steps to recover it."
     )
     response = client.models.generate_content(
-        model="gemini-1.5-flash",
+        model="gemini-2.0-flash",
         contents=prompt,
     )
     return response.text

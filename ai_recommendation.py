@@ -1,18 +1,18 @@
 import sqlite3
+from pathlib import Path
+
+DB_PATH = Path(__file__).parent.parent / "net-inventory-db" / "inventory.db"
 
 
 def migrate_db():
-    conn = sqlite3.connect("../net-inventory-db/inventory.db")  # Path to your Day 11 DB
-    cursor = conn.cursor()
-    try:
-        # Adding a new column to an existing table
-        cursor.execute("ALTER TABLE devices ADD COLUMN ai_recommendation TEXT")
-        conn.commit()
-        print("✅ Database migrated: added 'ai_recommendation' column.")
-    except sqlite3.OperationalError:
-        print("ℹ️  Column already exists, skipping migration.")
-    finally:
-        conn.close()
+    with sqlite3.connect(DB_PATH) as conn:
+        try:
+            conn.execute("ALTER TABLE devices ADD COLUMN ai_recommendation TEXT")
+            conn.commit()
+            print("✅ Database migrated: added 'ai_recommendation' column.")
+        except sqlite3.OperationalError:
+            print("ℹ️  Column already exists, skipping migration.")
 
 
-migrate_db()
+if __name__ == "__main__":
+    migrate_db()
